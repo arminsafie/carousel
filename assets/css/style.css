@@ -33,7 +33,7 @@ body {
   height: 40px;
   padding: 10px;
   border: none;
-  border-radius: 50%;
+  
   z-index: 10px;
   cursor: pointer;
   background-color: #ffffff8b;
@@ -50,12 +50,28 @@ body {
 }
 
 .btn-prev {
-  top: 45%;
-  left: 2%;
+  border-radius: 75% 25% 21% 79% / 49% 52% 48% 51% ;
+  top: 80%;
+  right: 10%;
 }
 
 
 .btn-next {
-  top: 45%;
+  
+  border-radius: 25% 75% 75% 25% / 48% 52% 48% 52%  ;
+  top: 80%;
   right: 2%;
+}
+
+@media only screen and (max-width: 600px){
+  .btn-prev {
+    top: 80%;
+    right: 15%;
+  }
+  
+  
+  .btn-next {
+    top: 80%;
+    right: 2%;
+  }
 }
